@@ -23,11 +23,12 @@
  *
  */
 
-#define GPIO_LED_IO     18
-#define GPIO_TRIGGER_IO 4
-#define GPIO_INPUT_IO   5
+#define GPIO_LED_IO     22
+#define GPIO_TRIGGER_IO 67
+#define GPIO_INPUT_IO  75
 // add for st nucleo board
-#define GPIO_LED_NUCLEO     5
+//#define GPIO_LED_NUCLEO     5
+#define STM32L496xx
 
 static void app_trigger_low_action(void *arg);
 static void app_trigger_high_action(void *arg);
@@ -36,7 +37,7 @@ gpio_dev_t led;
 gpio_dev_t trigger;
 gpio_dev_t input;
 //add for st nucleo board
-gpio_dev_t led_nucleo;
+//gpio_dev_t led_nucleo;
 
 static void gpio_isr_handler(void* arg)
 {
@@ -85,9 +86,9 @@ int application_start(int argc, char *argv[])
     hal_gpio_init(&input);
 
     /* gpio interrupt config */
-    hal_gpio_enable_irq(&input, IRQ_TRIGGER_BOTH_EDGES, gpio_isr_handler, (void *) GPIO_INPUT_IO);
+    hal_gpio_enable_irq(&input, IRQ_TRIGGER_BOTH_EDGES, gpio_isr_handler, (void *) GPIO_INPUT_IO);//LED和按键关联
 
-    aos_post_delayed_action(1000, app_trigger_low_action, NULL);
+    aos_post_delayed_action(1000, app_trigger_low_action, NULL);//
 #else
     //add for st nucleo board , if debug on developerkit board, please comment it
      /* gpio port config */

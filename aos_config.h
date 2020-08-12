@@ -1,0 +1,72 @@
+/* KEYWORD: PART1 USER DEFINED CONFIGURATION */
+/* Put user defined macro here */
+
+
+
+
+/* KEYWORD: PART2 COMPONENTS CONFIGURATION */
+/* Put configuration defined in Config.in files of components here.
+ It's better to modify the configuration by menuconfig, and the 
+ compiler will copy it here automatically.*/
+#define AOS_COMP_SAL_DEVICE 1
+#define AOS_COMP_NETMGR 1
+#define OSAL_RHINO 1
+#define ULOG_CONFIG_LOG_SIZE 256
+#define ULOG_CONFIG_STOP_FILTER_DEFAULT 6
+#define CONFIG_NO_TCPIP 1
+#define AOS_BOARD_DEVELOPERKIT 1
+#define AOS_COMP_SAL 1
+#define PLATFORM_HAS_DYNMEM 1
+#define SRCPATH "components/linkkit"
+#define BSP_SUPPORT_SPI 1
+#define AOS_BUILD_BOARD "developerkit"
+#define BSP_SUPPORT_WIFI 1
+#define KV_CONFIG_MAX_VAL_LEN 512
+#define VFS_CONFIG_PATH_MAX 256
+#define SENSOR_CONFIG_I2C_ENABLE 1
+#define SAL_DEFAULT_INPUTMBOX_SIZE 32
+#define KV_CONFIG_TASK_STACK_SIZE 1024
+#define AOS_SAL_WIFI_BK7231 1
+#define INFRA_LOG_MUTE_FLW 1
+#define AOS_ARCH_ARMV7M 1
+#define AOS_COMP_YLOOP 1
+#define AOS_COMP_NETWORK 1
+#define BSP_SUPPORT_UART 1
+#define WITH_SAL 1
+#define KV_CONFIG_MAX_KEY_LEN 128
+#define CONFIG_NO_LWIP 1
+#define AOS_SAL_DEVICE 1
+#define BSP_SUPPORT_I2C 1
+#define BSP_SUPPORT_FLASH 1
+#define BSP_SUPPORT_EXTERNAL_MODULE 1
+#define AOS_COMP_KERNEL_INIT 1
+#define BSP_SUPPORT_RTC 1
+#define AOS_COMP_KV 1
+#define BSP_SUPPORT_GPIO 1
+#define VFS_CONFIG_MAX_FILE_NUM 50
+#define AOS_COMP_ULOG 1
+#define INFRA_LOG_MUTE_DBG 1
+#define VFS_CONFIG_FD_OFFSET 512
+#define AOS_COMP_OSAL_AOS 1
+#define AOS_COMP_SENSOR 1
+#define AOS_COMP_EXTERNAL_MODULE 1
+#define SENSOR_CONFIG_DEPENDS_ENABLE 1
+#define AOS_NET_WITH_WIFI 1
+#define AOS_COMP_RHINO 1
+#define AOS_BUILD 1
+#define SYSINFO_APP_VERSION "app-1.0.0-20200214.140831"
+#define KV_CONFIG_TASK_PRIORITY 32
+#define AOS_COMP_VFS 1
+#define AOS_BUILD_APP "blink"
+#define VFS_CONFIG_DEVICE_NODES 25
+#define PLATFORM_HAS_STDINT 1
+#define AOS_APP_BLINK 1
+#define AOS_COMP_LIB_RBTREE 1
+#define AOS_COMP_NEWLIB_STUB 1
+#define INFRA_LOG 1
+#define AOS_APP_EXAMPLE 1
+#define BSP_SUPPORT_TIMER 1
+#define OSAL_CONFIG "rhino"
+#define SAL_USE_AOS_HAL 1
+#define AOS_MCU_STM32L4XX_CUBE 1
+#define UAGENT_INFO_PAYLOAD_SIZE 1200
