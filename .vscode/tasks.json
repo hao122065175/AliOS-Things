@@ -7,7 +7,7 @@
       "command": "aos",
       "args": [
         "make",
-        "blink@developerkit",
+        "helloworld@developerkit",
         "-c",
         "config"
       ],
@@ -32,7 +32,7 @@
       "command": "aos",
       "args": [
         "upload",
-        "blink@developerkit"
+        "helloworld@developerkit"
       ],
       "presentation": {
         "focus": true
@@ -44,7 +44,7 @@
       "command": "aos",
       "args": [
         "debug",
-        "blink@developerkit"
+        "helloworld@developerkit"
       ],
       "presentation": {
         "focus": true
@@ -82,7 +82,7 @@
       "command": "aos",
       "args": [
         "ota",
-        "blink@developerkit",
+        "helloworld@developerkit",
         "-d",
         "",
         "-p",
